@@ -1,0 +1,31 @@
+<div class="container">
+  <form [formGroup]="formCadastarProduto">
+    <div class="ui-g">
+      <div class="ui-g-12">
+        <h1>Novo Produto</h1>
+      </div>
+      <div class="ui-g-12 ui-md-6 ui-fluid">
+        <label>Codigo do produto</label>
+        <input pInputText type="number" formControlName="codigo">
+      </div>
+      <div class="ui-g-12 ui-md-12 ui-fluid">
+        <label>Nome</label>
+        <input pInputText type="text" formControlName="nome">
+      </div>
+      <div class="ui-g-12 ui-md-3 ui-fluid">
+        <label>Tipo</label>
+        <input pInputText type="text" formControlName="tipo">
+      </div>
+      <div class="ui-g-12 ui-md-6 ui-fluid">
+        <label>Preço</label>
+        <input pInputText type="number" formControlName="preco">
+      </div>
+      <div class="ui-g-12">
+        <button type="submit" class="btn btn-primary btnLogin" (click)="cadastrar()">Cadastrar</button>
+        <button type="cancelar" class="btn btn-primary">Cancelar</button>
+      </div>
+
+    </div>
+
+  </form>
+</div>
